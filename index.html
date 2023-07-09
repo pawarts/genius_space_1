@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Підключення шрифтів з Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Підключенно Roboto - regular, medium; Poppins - regular, bold -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <!-- Підключення стилів -->
+
+    <!-- Підключення основних стилів -->
+    <link rel="stylesheet" href="./css/nullystyle/nullystyle.css">
+    <link rel="stylesheet" href="./css/nullystyle/fonts.css">
+
+    <!-- Підключення стилів, для окремих блоків -->
+    <link rel="stylesheet" href="./css/header/header.css">
+    <link rel="stylesheet" href="./css/style_block_1/block_style.css">
+
+    <link rel="stylesheet" href="./css/style_block_2/block_style.css">
+
+    <link rel="stylesheet" href="./css/style_block_3/block_style.css">
+    <link rel="stylesheet" href="./css/style_block_3/slider.css">
+
+    <link rel="stylesheet" href="./css/style_block_4/block_style.css">
+
+    <link rel="stylesheet" href="./css/footer/footer.css">
+
+    <title>genius-homework-1</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <h2 class="logo">Beauty zone</h2>
+            <div class="link_group">
+                <a href="#main" class="roboto link opened_link">Про нас</a>
+                <a href="#why_us" class="roboto link">Чому ми</a>
+                <a href="#service" class="roboto link">Наші процедури</a>
+                <a href="#contact" class="roboto link">Контакти</a>
+            </div>
+            <div class="icons_group">
+                <img src="./images/icons/header_phone.svg" alt="" class="header_icon">
+                <img src="./images/icons/header_facebook.svg" alt="" class="header_icon">
+                <img src="./images/icons/header_instagram.svg" alt="" class="header_icon">
+            </div>
+        </header>
+
+        <section class="section_wrapper first_screen">
+            <div class="content">
+                <p class="content_subtitle roboto">Косметологічна клініка</p>
+                <p class="content_title roboto">Beauty Zone</p>
+                <p class="content_order_call roboto">Замовити дзвінок</p>
+                <p class="content_text roboto">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+            </div>
+        </section>
+
+        <section id="main" class="section_wrapper section_flex">
+            <div>
+                <h2 class="section_title">Перевтілюйтесь в <p>Beauty Zone!</p></h2>
+                <p class="section_text roboto">
+                    Наша косметологічна клініка пропонує вам професійні послуги
+                    з догляду за шкірою обличчя та тіла.
+                </p>
+                <p class="section_text roboto">
+                    B beauty zone ми гарантуємо найвищі стандарти якості
+                    та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість.
+                    З нами краса назавжди!
+                </p>
+            </div>
+            <img src="./images/блок%202/background.svg" class="section_image" alt="">
+        </section>
+
+        <section class="selection_wrapper">
+            <div id="why_us">
+                <h2 class="section_title ">Чому люди<p>обирають нас</p></h2>
+
+                <div class="card_items">
+                    <div class="card_item">
+                        <img src="./images/Блок%203/icons/education.svg" alt="" class="card_icon">
+                        <p class="card_text roboto">Всі наші косметологи мають вищу медичну освіту
+                            та стаж роботи від 5 років</p>
+                    </div>
+                    <div class="card_item">
+                        <img src="./images/Блок%203/icons/education.svg" alt="" class="card_icon">
+                        <p class="card_text roboto">Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
+                    </div>
+                    <div class="card_item">
+                        <img src="./images/Блок%203/icons/education.svg" alt="" class="card_icon">
+                        <p class="card_text roboto">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="service">
+                <h2 class="section_title service_title">Наші <p>процедури</p></h2>
+
+                <div class="slider_wrapper">
+
+                    <div class="slider_body">
+                        <img src="./images/Блок%203/icons/navigation_arrow.svg" alt="" class="slider_arrow_button">
+                        <div class="slider_items">
+                            <div class="slider_item">
+                                <img src="./images/Блок%203/sliders/masks.png" alt="" class="slider_item_image">
+                                <p class="slider_item_background"></p>
+                                <p class="slider_item_text roboto">Маски <br> для обличчя</p>
+                            </div>
+                            <div class="slider_item">
+                                <img src="./images/Блок%203/sliders/injection.png" alt="" class="slider_item_image">
+                                <p class="slider_item_background"></p>
+                                <p class="slider_item_text roboto">Ін'єкції <br> для обличчя</p>
+                            </div>
+                            <div class="slider_item">
+                                <img src="./images/Блок%203/sliders/clear_face.png" alt="" class="slider_item_image">
+                                <p class="slider_item_background"></p>
+                                <p class="slider_item_text roboto">Очищення <br> обличчя</p>
+                            </div>
+                        </div>
+                        <img src="./images/Блок%203/icons/navigation_arrow.svg" alt="" class="slider_arrow_button slider_arrow_button-next">
+                    </div>
+
+                    <div class="slider_buttons">
+                        <button class="slider_button slider_button-active"></button>
+                        <button class="slider_button"></button>
+                        <button class="slider_button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section_wrapper">
+            <h2 class="section_title section_title-center">Як нас<p>знайти</p></h2>
+            
+            <div class="content_wrapper">
+                <img src="./images/Block%204/map.png" alt="" class="content_map">
+                <form class="content_form" action="#" method="POST">
+                    <span class="content_form_title roboto"><span>Запишіться <p>безкоштовно</p></span>та отримайте подарунок</span>
+                    <input placeholder="Ваше ім'я та прізвище" class="content_form_input" type="text">
+                    <input placeholder="Ваш номер телефону" class="content_form_input" type="tel">
+                    <input placeholder="Ваша електронна пошта" class="content_form_input" type="email">
+                    <button class="content_form_button_submit" type="submit">Записатись безкоштовно</button>
+                    <div class="agree_text-wrapper">
+                        <p class="agree_text roboto">Натискаючи на кнопку я погоджуюсь</p>
+                        <p class="agree_text roboto agree_text-underline">з політикою конфіденційності</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="footer_wrapper">
+
+            <h2 class="logo">Beauty zone</h2>
+
+            <div class="footer_link_group">
+                <a href="#main" class="roboto opened_link footer_text">Про нас</a>
+                <a href="#why_us" class="roboto footer_text">Чому ми</a>
+                <a href="#service" class="roboto footer_text">Наші процедури</a>
+                <a href="#contact" class="roboto footer_text">Контакти</a>
+            </div>
+
+            <div>
+                <p class="footer_text roboto">+ 38 (096) 000 00 07</p>
+                <p class="footer_text roboto">beautyzone@gmail.com</p>
+                <p class="footer_text roboto">Україна, м. Київ,<br> вул. Тараса Шевченка 5</p>
+
+                <div class="icons_wrap">
+                    <img src="./images/footer/icons/phone.svg" alt="">
+                    <img src="./images/footer/icons/facebook.svg" alt="">
+                    <img src="./images/footer/icons/instagram.svg" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p class="footer_text roboto">Політика конфіденційності</p>
+                <p class="roboto agree_text">© 2022 Дані захищені</p>
+            </div>
+
+            <img src="./images/footer/footer.png" alt="" class="footer_staff_image">
+        </footer>
+    </div>
+</body>
+</html>
