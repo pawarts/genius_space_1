@@ -1,0 +1,38 @@
+.selection_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 200vh;
+    background-image: url("../../images/Блок 3/background.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.selection_wrapper .section_title{
+    text-align: center;
+    padding-top: 176px;
+}
+
+.service_title {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #0000;
+}
+
+.service_title p {
+    margin-left: 15px;
+}
+
+.card_items{
+    display: flex;
+    width: 1060px;
+    margin-top: 48px;
+}
+
+.card_item{
+    background: #ffff;
+    border-radius: 32px;
+    padding: 24px 32px;
+    margin-right: 56px;
+}
