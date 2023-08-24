@@ -29,14 +29,15 @@
 
     <link rel="stylesheet" href="./css/desctop_style/footer/footer.css">
 
-    <link rel="stylesheet" href="./css/desctop_style/modal_window.css">
+    <link rel="stylesheet" href="./css/modal_window.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Стилі для мобільних пристроїв -->
+    <link rel="stylesheet" href="./css/mobile_style/style.css">
 
     <title>genius-homework-1</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
 
         <header class="header">
             <h2 class="logo">Beauty zone</h2>
@@ -50,6 +51,9 @@
                 <img src="./images/icons/header_phone.svg" alt="" class="header_icon">
                 <img src="./images/icons/header_facebook.svg" alt="" class="header_icon">
                 <img src="./images/icons/header_instagram.svg" alt="" class="header_icon">
+            </div>
+            <div class="burger_menu-wrapper" id="burger_menu">
+                <img class src="./images/icons/mobile_icons/menu.svg" alt="">
             </div>
         </header>
 
@@ -77,11 +81,12 @@
                 </p>
             </div>
             <img src="./images/блок%202/background.svg" class="section_image" alt="">
+            <img src="./images/блок%202/Star.svg" class="section_image_mobile_star" alt="">
         </section>
 
         <section class="selection_wrapper">
             <div id="why_us">
-                <h2 class="section_title ">Чому люди<span>обирають нас</span></h2>
+                <h2 class="section_title">Чому люди <span>обирають нас</span></h2>
 
                 <div class="card_items">
                     <div class="card_item">
@@ -90,18 +95,18 @@
                             та стаж роботи від 5 років</p>
                     </div>
                     <div class="card_item">
-                        <img src="./images/Блок%203/icons/education.svg" alt="" class="card_icon">
+                        <img src="./images/Блок%203/icons/staff.svg" alt="" class="card_icon">
                         <p class="card_text roboto">Використовуємо тільки професійне обладнання та косметику, перевірену часом</p>
                     </div>
                     <div class="card_item">
-                        <img src="./images/Блок%203/icons/education.svg" alt="" class="card_icon">
+                        <img src="./images/Блок%203/icons/goal.svg" alt="" class="card_icon">
                         <p class="card_text roboto">Наша мета - підкреслити переваги та приховати недоліки, а не переробити</p>
                     </div>
                 </div>
             </div>
 
             <div id="service">
-                <h2 class="section_title service_title">Наші <span>процедури</span></h2>
+                <h2 class="section_title service_title">Наші <span> процедури</span></h2>
 
                 <div class="slider_wrapper">
 
@@ -140,7 +145,8 @@
             <h2 class="section_title section_title-center">Як нас<span>знайти</span></h2>
             
             <div class="content_wrapper">
-                <img src="./images/Block%204/map.png" alt="" class="content_map">
+                <img src="./images/Block%204/map.png" alt="" class="content_map" id="desktop_map_image">
+                <img src="./images/Block%204/mobile_map.png" alt="" class="content_map" id="mobile_map_image">
                 <form class="content_form" action="#" method="POST">
                     <span class="content_form_title roboto"><span>Запишіться <p>безкоштовно</p></span>та отримайте подарунок</span>
                     <input placeholder="Ваше ім'я та прізвище" class="content_form_input" type="text" id="content_form_input" pattern="^\s*\S+\s+\S+\s*$" required>
@@ -177,6 +183,27 @@
                 </form>
             </div>
         </section>
+        <section class="mobile_menu" id="mobile_menu">
+            <div class="menu_wrapper">
+                <div class="menu_header">
+                    <h2 class="logo">Beauty zone</h2>
+                    <img src="./images/mobileModalWindow/close_button.svg" alt="" id="close_menu">
+                </div>
+                <div class="menu_links_wrapper">
+                    <div class="link_group">
+                        <a href="#main" class="roboto link opened_link">Про нас</a>
+                        <a href="#why_us" class="roboto link">Чому ми</a>
+                        <a href="#service" class="roboto link">Наші процедури</a>
+                        <a href="#contact" class="roboto link">Контакти</a>
+                    </div>
+                    <div class="icons_group">
+                        <img src="./images/icons/header_phone.svg" alt="" class="header_icon">
+                        <img src="./images/icons/header_facebook.svg" alt="" class="header_icon">
+                        <img src="./images/icons/header_instagram.svg" alt="" class="header_icon">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         
         <footer class="footer_wrapper">
@@ -190,10 +217,12 @@
                 <a href="#contact" class="roboto footer_text">Контакти</a>
             </div>
 
-            <div>
+            <div id="contact_information">
                 <p class="footer_text roboto">+ 38 (096) 000 00 07</p>
                 <p class="footer_text roboto">beautyzone@gmail.com</p>
                 <p class="footer_text roboto">Україна, м. Київ,<br> вул. Тараса Шевченка 5</p>
+
+                <p class="footer_text roboto" id="desktop_hidden_text">Політика конфіденційності</p>
 
                 <div class="icons_wrap">
                     <img src="./images/footer/icons/phone.svg" alt="">
@@ -203,7 +232,7 @@
             </div>
 
             <div>
-                <p class="footer_text roboto">Політика конфіденційності</p>
+                <p class="footer_text roboto" id="mobile_hidden_text">Політика конфіденційності</p>
                 <p class="roboto agree_text">© 2022 Дані захищені</p>
             </div>
 
@@ -213,5 +242,6 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile_menu.js"></script>
 </body>
 </html>

@@ -36,3 +36,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
+
+#mobile_hidden_text{
+    display: block;
+}
+
+#desktop_hidden_text{
+    display: none;
+}

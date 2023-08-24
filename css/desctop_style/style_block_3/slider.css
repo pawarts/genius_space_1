@@ -21,7 +21,7 @@
     top: 0;
     background: linear-gradient(180deg, rgba(1, 28, 68, 0.00) 47.40%, rgba(1, 28, 68, 0.73) 82.66%, #011C44 99.06%);
     height: 100%;
-    width: 100%;
+    width: 344px;
 }
 
 .slider_item_text{
@@ -46,9 +46,13 @@
 }
 
 .slider_buttons{
-    width: 121px;
+    max-width: 121px;
     justify-content: space-between;
     margin-top: 32px;
+}
+
+.slider_button:not(:last-child){
+    margin-right: 16px;
 }
 
 .slider_button{
