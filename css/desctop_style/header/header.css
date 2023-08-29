@@ -30,7 +30,7 @@
     margin-right: 56px;
 }
 
-.opened_link{
+.link:hover{
     color: #2B7FFF;
 }
 

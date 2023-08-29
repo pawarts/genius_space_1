@@ -48,9 +48,9 @@
                 <a href="#contact" class="roboto link">Контакти</a>
             </div>
             <div class="icons_group">
-                <img src="./images/icons/header_phone.svg" alt="" class="header_icon">
-                <img src="./images/icons/header_facebook.svg" alt="" class="header_icon">
-                <img src="./images/icons/header_instagram.svg" alt="" class="header_icon">
+                <img src="./images/icons/header_phone.svg" alt="" class="header_icon clickable_icon">
+                <img src="./images/icons/header_facebook.svg" alt="" class="header_icon clickable_icon">
+                <img src="./images/icons/header_instagram.svg" alt="" class="header_icon clickable_icon">
             </div>
             <div class="burger_menu-wrapper" id="burger_menu">
                 <img class src="./images/icons/mobile_icons/menu.svg" alt="">
@@ -62,7 +62,7 @@
             <div class="content">
                 <p class="content_subtitle roboto">Косметологічна клініка</p>
                 <p class="content_title roboto">Beauty Zone</p>
-                <p class="content_order_call roboto" id="open_modal">Замовити дзвінок</p>
+                <a href="tel:+380960000007"><button class="content_order_call roboto" id="open_modal">Замовити дзвінок</button></a>
                 <p class="content_text roboto">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -113,7 +113,7 @@
                     <div class="slider_body">
                         <img src="./images/Блок%203/icons/navigation_arrow.svg" alt="" class="slider_arrow_button">
                         <div class="slider_items">
-                            <div class="slider_item">
+                            <div class="slider_item" id="slider_item">
                                 <img src="./images/Блок%203/sliders/masks.png" alt="" class="slider_item_image">
                                 <p class="slider_item_background"></p>
                                 <p class="slider_item_text roboto">Маски <br> для обличчя</p>
@@ -145,8 +145,8 @@
             <h2 class="section_title section_title-center">Як нас<span>знайти</span></h2>
             
             <div class="content_wrapper">
-                <img src="./images/Block%204/map.png" alt="" class="content_map" id="desktop_map_image">
-                <img src="./images/Block%204/mobile_map.png" alt="" class="content_map" id="mobile_map_image">
+
+                <iframe class="content_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24352.20384501926!2d22.50443300066488!3d40.27518418914927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1692899209264!5m2!1sen!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <form class="content_form" action="#" method="POST">
                     <span class="content_form_title roboto"><span>Запишіться <p>безкоштовно</p></span>та отримайте подарунок</span>
                     <input placeholder="Ваше ім'я та прізвище" class="content_form_input" type="text" id="content_form_input" pattern="^\s*\S+\s+\S+\s*$" required>
@@ -218,16 +218,16 @@
             </div>
 
             <div id="contact_information">
-                <p class="footer_text roboto">+ 38 (096) 000 00 07</p>
+                <a href="tel:+380960000007"><p class="footer_text roboto">+ 38 (096) 000 00 07</p></a>
                 <p class="footer_text roboto">beautyzone@gmail.com</p>
                 <p class="footer_text roboto">Україна, м. Київ,<br> вул. Тараса Шевченка 5</p>
 
                 <p class="footer_text roboto" id="desktop_hidden_text">Політика конфіденційності</p>
 
                 <div class="icons_wrap">
-                    <img src="./images/footer/icons/phone.svg" alt="">
-                    <img src="./images/footer/icons/facebook.svg" alt="">
-                    <img src="./images/footer/icons/instagram.svg" alt="">
+                    <img src="./images/footer/icons/phone.svg" class="clickable_icon" alt="">
+                    <img src="./images/footer/icons/facebook.svg" class="clickable_icon" alt="">
+                    <img src="./images/footer/icons/instagram.svg" class="clickable_icon" alt="">
                 </div>
             </div>
 
@@ -243,5 +243,6 @@
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile_menu.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

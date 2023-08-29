@@ -21,10 +21,15 @@
     padding: 0 56px 0 56px;
     border-radius: 32px;
 }
-
 .content_map{
     border-radius: 32px;
+    width: 605px;
+    height: 481px;
 }
+#mobile_map_image{
+    display: none;
+}
+
 
 
 .content_form_input{
